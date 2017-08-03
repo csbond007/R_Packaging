@@ -1,0 +1,207 @@
+R version 3.2.1 (2015-06-18) -- "World-Famous Astronaut"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Workspace loaded from ~/.RData]
+
+> ############################################
+> ## Dev-Ops Tools
+> 
+> # helps with building R packages
+> install.packages("devtools")
+Installing package into ‘C:/Users/Kaustav.Kaustav-Dell/Documents/R/win-library/3.2’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘memoise’, ‘whisker’, ‘rstudioapi’, ‘jsonlite’, ‘git2r’, ‘withr’
+
+
+  There are binary versions available but the source versions are later:
+         binary source needs_compilation
+jsonlite    1.4    1.5              TRUE
+git2r    0.18.0 0.19.0              TRUE
+withr     1.0.2  2.0.0             FALSE
+devtools 1.12.0 1.13.3              TRUE
+
+  Binaries will be installed
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/memoise_1.1.0.zip'
+Content type 'application/zip' length 29605 bytes (28 KB)
+downloaded 28 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/whisker_0.3-2.zip'
+Content type 'application/zip' length 64638 bytes (63 KB)
+downloaded 63 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/rstudioapi_0.6.zip'
+Content type 'application/zip' length 50724 bytes (49 KB)
+downloaded 49 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/jsonlite_1.4.zip'
+Content type 'application/zip' length 1120239 bytes (1.1 MB)
+downloaded 1.1 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/git2r_0.18.0.zip'
+Content type 'application/zip' length 2985635 bytes (2.8 MB)
+downloaded 2.8 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/devtools_1.12.0.zip'
+Content type 'application/zip' length 432097 bytes (421 KB)
+downloaded 421 KB
+
+package ‘memoise’ successfully unpacked and MD5 sums checked
+package ‘whisker’ successfully unpacked and MD5 sums checked
+package ‘rstudioapi’ successfully unpacked and MD5 sums checked
+package ‘jsonlite’ successfully unpacked and MD5 sums checked
+package ‘git2r’ successfully unpacked and MD5 sums checked
+package ‘devtools’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Kaustav.Kaustav-Dell\AppData\Local\Temp\RtmpiCquun\downloaded_packages
+installing the source package ‘withr’
+
+trying URL 'https://cran.rstudio.com/src/contrib/withr_2.0.0.tar.gz'
+Content type 'application/x-gzip' length 16956 bytes (16 KB)
+downloaded 16 KB
+
+* installing *source* package 'withr' ...
+** package 'withr' successfully unpacked and MD5 sums checked
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+*** arch - i386
+*** arch - x64
+* DONE (withr)
+
+The downloaded source packages are in
+	‘C:\Users\Kaustav.Kaustav-Dell\AppData\Local\Temp\RtmpiCquun\downloaded_packages’
+> library('devtools')
+Warning message:
+package ‘devtools’ was built under R version 3.2.5 
+> # roxygen2 for documenting your functions 
+> install.packages("roxygen2")
+Installing package into ‘C:/Users/Kaustav.Kaustav-Dell/Documents/R/win-library/3.2’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘backports’, ‘crayon’, ‘rprojroot’, ‘brew’, ‘desc’, ‘commonmark’, ‘xml2’
+
+
+  There is a binary version available but the source version is later:
+          binary source needs_compilation
+backports  1.0.5  1.1.0             FALSE
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/crayon_1.3.2.zip'
+Content type 'application/zip' length 703837 bytes (687 KB)
+downloaded 687 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/rprojroot_1.2.zip'
+Content type 'application/zip' length 59039 bytes (57 KB)
+downloaded 57 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/brew_1.0-6.zip'
+Content type 'application/zip' length 104727 bytes (102 KB)
+downloaded 102 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/desc_1.1.0.zip'
+Content type 'application/zip' length 171084 bytes (167 KB)
+downloaded 167 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/commonmark_1.2.zip'
+Content type 'application/zip' length 244283 bytes (238 KB)
+downloaded 238 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/xml2_1.1.1.zip'
+Content type 'application/zip' length 3488697 bytes (3.3 MB)
+downloaded 3.3 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/roxygen2_6.0.1.zip'
+Content type 'application/zip' length 686441 bytes (670 KB)
+downloaded 670 KB
+
+package ‘crayon’ successfully unpacked and MD5 sums checked
+package ‘rprojroot’ successfully unpacked and MD5 sums checked
+package ‘brew’ successfully unpacked and MD5 sums checked
+package ‘desc’ successfully unpacked and MD5 sums checked
+package ‘commonmark’ successfully unpacked and MD5 sums checked
+package ‘xml2’ successfully unpacked and MD5 sums checked
+package ‘roxygen2’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Kaustav.Kaustav-Dell\AppData\Local\Temp\RtmpiCquun\downloaded_packages
+installing the source package ‘backports’
+
+trying URL 'https://cran.rstudio.com/src/contrib/backports_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 7909 bytes
+downloaded 7909 bytes
+
+* installing *source* package 'backports' ...
+** package 'backports' successfully unpacked and MD5 sums checked
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+*** arch - i386
+*** arch - x64
+* DONE (backports)
+
+The downloaded source packages are in
+	‘C:\Users\Kaustav.Kaustav-Dell\AppData\Local\Temp\RtmpiCquun\downloaded_packages’
+> library("roxygen2")
+Warning message:
+package ‘roxygen2’ was built under R version 3.2.5 
+> ## Set the Current Working Directory
+> setwd('C:/Users/Kaustav.Kaustav-Dell/Desktop/R_Packaging-master/R_Packaging-master/R_Final/')
+> #' ## Once you've got your documentation completed, you can simply run:
+> devtools::document()
+Error: Could not find package root.
+> ###############################################
+> ## Set the Current Working Directory
+> setwd('C:/Users/Kaustav.Kaustav-Dell/Desktop/R_Packaging-master/R_Packaging-master/R_Final/myRPackage/')
+> #' ## Once you've got your documentation completed, you can simply run:
+> devtools::document()
+Updating myRPackage documentation
+Loading myRPackage
+Error in (function (dep_name, dep_ver = NA, dep_compare = NA)  : 
+  Dependency package tictoc not available.
+> install.packages("tictoc")
+Installing package into ‘C:/Users/Kaustav.Kaustav-Dell/Documents/R/win-library/3.2’
+(as ‘lib’ is unspecified)
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.2/tictoc_1.0.zip'
+Content type 'application/zip' length 131355 bytes (128 KB)
+downloaded 128 KB
+
+package ‘tictoc’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Kaustav.Kaustav-Dell\AppData\Local\Temp\RtmpiCquun\downloaded_packages
+> #' ## Once you've got your documentation completed, you can simply run:
+> devtools::document()
+Updating myRPackage documentation
+Loading myRPackage
+Updating roxygen version in C:\Users\Kaustav.Kaustav-Dell\Desktop\R_Packaging-master\R_Packaging-master\R_Final\myRPackage/DESCRIPTION
+Warning: @export [Computational_Functions.R#10]: may only span a single line
+Warning: @title [Computational_Functions.R#1]: requires a value
+Warning: @description [Computational_Functions.R#1]: requires a value
+Writing NAMESPACE
+Writing sumFunction.Rd
+Warning messages:
+1: In (function (dep_name, dep_ver = NA, dep_compare = NA)  :
+  Need tictoc >= 3.3.2 but loaded version is 1.0
+2: In readLines(file) :
+  incomplete final line found on 'C:\Users\Kaustav.Kaustav-Dell\Desktop\R_Packaging-master\R_Packaging-master\R_Final\myRPackage/DESCRIPTION'
+3: In readLines(file) :
+  incomplete final line found on 'C:\Users\Kaustav.Kaustav-Dell\Desktop\R_Packaging-master\R_Packaging-master\R_Final\myRPackage/DESCRIPTION'
+  
